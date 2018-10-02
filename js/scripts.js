@@ -49,10 +49,7 @@ $(document).ready(function() {
                     message.text('Подтвердите соглашение').slideDown(500);
                     return false;
                 };
-                fn.val('');
-                ph.val('');
-                ms.val('');
-                btn.text('Отправлено');
+                btn.text('Отправляется...');
                 // $.ajax({
                 //     url: '/wp-content/themes/mastervision/mails/consult.php',
                 //     type: 'POST',

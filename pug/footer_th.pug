@@ -17,30 +17,8 @@ section#footer
 			.clfix
 		p ИП Кудряшов Александр Анатольевич, Тюмень, проезд Летний, 9а, ИНН 720410077658, ОГРН 315723200065100
 		a#politics(href="#!" data-toggle="modal" data-target="#pcModalPolitics") Политика конфиденциальности
-
-<div class="modal fade" tabindex="-1" role="dialog" id="pcModalForm">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-wrapper">
-				<div class="modal-body"> 
-					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">×</span>
-					</button>
-					<form class="feedback_form consult_form" action="/thanks/index.php" method="post">
-						<h3>Заявка на личную консультацию</h3>
-						<input name="first-name" placeholder="Ваше имя" type="text"> <!--<input type="text" name="last-name" placeholder="Ваша фамилия" />--> 
-						<input name="phone" placeholder="Ваш телефон" type="tel"> <!--<input type="email" name="email" placeholder="Ваш email" />-->
-						<textarea name="msg" placeholder="Коротко о Вашем запросе"></textarea>
-						<p class="alert_message"></p>
-						//- <p class="success_message"></p>
-						<div class="checking">
-							<input class="check" id="check" checked="checked" type="checkbox">
-							<label class="check_label" for="check">Я согласен с
-								<a href="javascript:void(0);" data-toggle="modal" data-target="#pcModalPolitics">условиями обработки </a>персональных данных
-							</label>
-						</div>
-					<button class="button" type="submit" >Отправить</button>
-					</div></form></div></div></div></div>
+link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css")
+script(src="../js/libs.min.js")
 .modal.fade(tabindex="-1" role="dialog")#pcModalPolitics
 	.modal-dialog(role="document")
 		.modal-content
