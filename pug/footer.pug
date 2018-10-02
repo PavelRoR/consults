@@ -26,21 +26,21 @@ section#footer
 					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">×</span>
 					</button>
-					<div class="feedback_form consult_form">
+					<form class="feedback_form consult_form" action="thanks.php">
 						<h3>Заявка на личную консультацию</h3>
 						<input name="first-name" placeholder="Ваше имя" type="text"> <!--<input type="text" name="last-name" placeholder="Ваша фамилия" />--> 
 						<input name="phone" placeholder="Ваш телефон" type="tel"> <!--<input type="email" name="email" placeholder="Ваш email" />-->
 						<textarea name="msg" placeholder="Коротко о Вашем запросе"></textarea>
 						<p class="alert_message"></p>
-						<p class="success_message"></p>
+						//- <p class="success_message"></p>
 						<div class="checking">
 							<input class="check" id="check" checked="checked" type="checkbox">
 							<label class="check_label" for="check">Я согласен с
 								<a href="javascript:void(0);" data-toggle="modal" data-target="#pcModalPolitics">условиями обработки </a>персональных данных
 							</label>
 						</div>
-					<button class="button" type="submit" onclick="return false">Отправить</button>
-					</div></div></div></div></div></div>
+					<button class="button" type="submit" >Отправить</button>
+					</div></form></div></div></div></div>
 .modal.fade(tabindex="-1" role="dialog")#pcModalPolitics
 	.modal-dialog(role="document")
 		.modal-content
