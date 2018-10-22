@@ -14,7 +14,7 @@ $message = $_POST['msg'];
 $mail->Host = 'smtp.yandex.ru';                                               // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'pc-managers@mastervision.su'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'ieOxzOMZU5jq'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Password = 'OGsJAOASaug2yt1ck0'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
@@ -51,6 +51,32 @@ if(empty($f_name) || empty($phone)  || empty($message) ) {
         <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
         <link rel="stylesheet" href="../css/bootstrap.min.css" />
         <link rel="stylesheet" href="../css/styles.css" />
+        <!-- Facebook Pixel Code -->
+<script>
+	! function(f, b, e, v, n, t, s) {
+		if (f.fbq) return;
+		n = f.fbq = function() {
+			n.callMethod ?
+				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+		};
+		if (!f._fbq) f._fbq = n;
+		n.push = n;
+		n.loaded = !0;
+		n.version = '2.0';
+		n.queue = [];
+		t = b.createElement(e);
+		t.async = !0;
+		t.src = v;
+		s = b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t, s)
+	}(window, document, 'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '869611096574211');
+	fbq('track', 'PageView');
+	fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=869611096574211&ev=PageView&noscript=1" /></noscript>
+<!-- End Facebook Pixel Code -->
         <script>
             ! function () {
                 var t = document.createElement("script");
@@ -255,6 +281,32 @@ if($mail->send()  ) { ;?>
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Facebook Pixel Code -->
+<script>
+	! function(f, b, e, v, n, t, s) {
+		if (f.fbq) return;
+		n = f.fbq = function() {
+			n.callMethod ?
+				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+		};
+		if (!f._fbq) f._fbq = n;
+		n.push = n;
+		n.loaded = !0;
+		n.version = '2.0';
+		n.queue = [];
+		t = b.createElement(e);
+		t.async = !0;
+		t.src = v;
+		s = b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t, s)
+	}(window, document, 'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '869611096574211');
+	fbq('track', 'PageView');
+	fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=869611096574211&ev=PageView&noscript=1" /></noscript>
+<!-- End Facebook Pixel Code -->
     <script>
         ! function () {
             var t = document.createElement("script");
@@ -457,6 +509,32 @@ if($mail->send()  ) { ;?>
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/styles.css" />
+    <!-- Facebook Pixel Code -->
+<script>
+	! function(f, b, e, v, n, t, s) {
+		if (f.fbq) return;
+		n = f.fbq = function() {
+			n.callMethod ?
+				n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+		};
+		if (!f._fbq) f._fbq = n;
+		n.push = n;
+		n.loaded = !0;
+		n.version = '2.0';
+		n.queue = [];
+		t = b.createElement(e);
+		t.async = !0;
+		t.src = v;
+		s = b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t, s)
+	}(window, document, 'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '869611096574211');
+	fbq('track', 'PageView');
+	fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=869611096574211&ev=PageView&noscript=1" /></noscript>
+<!-- End Facebook Pixel Code -->
     <script>
         ! function () {
             var t = document.createElement("script");
