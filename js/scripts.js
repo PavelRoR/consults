@@ -115,13 +115,25 @@ $(document).ready(function() {
     });
 	    /*Тоггл с запросами*/
     $(function () {
-        $('.all_requests').click(function () {
+        $('#all_requests_button').click(function () {
             if ($(this).text() == 'Смотреть запросы') {
                 $('#all_requests').slideDown(700);
                 $(this).text('Свернуть');
             } else {
                 $('#all_requests').slideUp(700);
                 $(this).text('Смотреть запросы');
+            }
+        });
+    });
+	    /*Тоггл со спецами*/
+    $(function () {
+        $('#all_specialists_button').click(function () {
+            if ($(this).text() == 'Все специалисты') {
+                $('#our_specialists_more').slideDown(700);
+                $(this).text('Свернуть');
+            } else {
+                $('#our_specialists_more').slideUp(700);
+                $(this).text('Все специалисты');
             }
         });
     });
