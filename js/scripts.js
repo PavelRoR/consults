@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $(function () {
         var
             reNone = /.+/,
@@ -113,7 +113,7 @@ $(document).ready(function() {
             btn.text('Отправить');
         });
     });
-	    /*Тоггл с запросами*/
+    /*Тоггл с запросами*/
     $(function () {
         $('#all_requests_button').click(function () {
             if ($(this).text() == 'Смотреть запросы') {
@@ -125,7 +125,7 @@ $(document).ready(function() {
             }
         });
     });
-	    /*Тоггл со спецами*/
+    /*Тоггл со спецами*/
     $(function () {
         $('#all_specialists_button').click(function () {
             if ($(this).text() == 'Все специалисты') {
@@ -137,7 +137,20 @@ $(document).ready(function() {
             }
         });
     });
+    /*FAQ*/
+    $(function () {
+        $('.faq_title').on('click', function () {
+            var a = $('span', this);
+            if (a.text() == '+') {
+                a.text('-');
+                $(this).next().slideDown(500);
+            } else {
+                a.text('+');
+                $(this).next().slideUp(500);
 
+            }
+        });
+    });
     /*Страые браузеры*/
     var yaBrowserUpdater = new ya.browserUpdater.init({
         "lang": "ru",
@@ -157,5 +170,5 @@ $(document).ready(function() {
             "theme": "blue"
         }
     });
-/*Конец документа*/
+    /*Конец документа*/
 });
