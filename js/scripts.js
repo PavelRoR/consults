@@ -151,6 +151,25 @@ $(document).ready(function () {
             }
         });
     });
+    /*Тоггл со спецами*/
+    $(function () {
+        $('#all_revs_button').click(function () {
+            if ($(this).text() == 'Смотреть все отзывы') {
+                $('#revs_all').slideDown(700);
+                $(this).text('Свернуть');
+            } else {
+                $('#revs_all').slideUp(700);
+                $(this).text('Смотреть все отзывы');
+            }
+        });
+    });
+    /* Видео */
+$(function () {
+    $('.video_wrapper img').click(function () {
+        var dy = $(this).parent().attr('data-youtube');
+        $(this).parent().html('<iframe src="https://youtube.com/embed/' + dy +'?rel=0&autoplay=1" allowfullscreen></iframe>');
+    });
+});
     /*Страые браузеры*/
     var yaBrowserUpdater = new ya.browserUpdater.init({
         "lang": "ru",
