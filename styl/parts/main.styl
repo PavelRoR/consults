@@ -1,72 +1,122 @@
 #main
-    width: 100%;
-    padding: 60px 0 0;
-    overflow: hidden;
-    background-image: url(../img/main_bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 bottom;
+	width: 100%;
+	padding: 60px 0 20px;
+	overflow: hidden;
+	background-image: url(../img/main_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0 bottom;
 .main_title {
-    font-size: 46px;
-    font-family: "HelveticaNeueCyrBlack",sans-serif;
-    color: #fff;
-    line-height: 1.1;
-    margin: 0 0 41px;
-    max-width: 865px;
+	font-size: 46px;
+	font-family: "HelveticaNeueCyrBlack",sans-serif;
+	color: #fff;
+	line-height: 1.1;
+	margin: 0 0 41px;
+	max-width: 865px;
 }
 .main_subtitle {
-    font-size: 26px;
-    font-family: "HelveticaNeueCyrRoman",sans-serif;
-    color: #fff;
-    line-height: 1.4;
-    // max-width: 730px;
+	font-size: 26px;
+	font-family: "HelveticaNeueCyrRoman",sans-serif;
+	color: #fff;
+	line-height: 1.4;
+	// max-width: 730px;
 }
 .main_subtitle_reach {
-    margin: 35px 0;
+	margin: 35px 0;
 }
 .button {
-    width: 100%;
-    max-width: 320px;
-    margin: 0 auto 40px;
-    display: block;
-    background-color: #4745d7;
-    background-image: linear-gradient(174deg,#3432de 0,#4745d7 100%);
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50px;
-    padding: 0 35px;
-    font-size: 14px;
-    font-family: "HelveticaNeueCyrBold",sans-serif;
-    color: #fdfcfd;
-    text-transform: uppercase;
-    text-align: center;
-    border: 0;
-    cursor pointer
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto 40px;
+	display: block;
+	background-color: #4745d7;
+	background-image: linear-gradient(174deg,#3432de 0,#4745d7 100%);
+	height: 45px;
+	line-height: 45px;
+	border-radius: 50px;
+	padding: 0 35px;
+	font-size: 14px;
+	font-family: "HelveticaNeueCyrBold",sans-serif;
+	color: #fdfcfd;
+	text-transform: uppercase;
+	text-align: center;
+	border: 0;
+	cursor pointer
 }
 .button:hover
-    color: #fdfcfd;
-    background-color: #252525;
-    background-image: linear-gradient(0deg,transparent 0,transparent 100%);
-    text-decoration: none;
+	color: #fdfcfd;
+	background-color: #252525;
+	background-image: linear-gradient(0deg,transparent 0,transparent 100%);
+	text-decoration: none;
 #magic_five
-    display: block;
-    margin: 0 auto -5px
-    width: 100%;
-    max-width: 1102px;
+	display: block;
+	margin: 0 auto -5px
+	width: 100%;
+	max-width: 1102px;
 #main_thanks
-    width: 100%;
-    padding: 24px 0 0;
-    overflow: hidden;
-    background-image: url(../img/main_bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0 bottom;
-    min-height calc(100vh - 240px);
-    text-align: center
+	width: 100%;
+	padding: 24px 0 0;
+	overflow: hidden;
+	background-image: url(../img/main_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0 bottom;
+	min-height calc(100vh - 240px);
+	text-align: center
+.ask
+	position relative
+	color #fff
+	font-size: 25px
+	margin-bottom: 18px
+	font-family: 'HelveticaNeueCyrItalic';
+	&:after
+		content: url(../img/arrow.png)
+		width 33px
+		height 33px
+		position: absolute
+		right 0
+		top calc(50% - 16px)
 .thanks_main_title
 .thanks_main_subtitle
-    max-width 100%
+	max-width 100%
 .thanks_main_title
-    margin-top: 60px
+	margin-top: 60px
 .thanks_main_subtitle
-    font-size: 28px
+	font-size: 28px
+#video
+	display block
+	margin: 0 auto
+	width 100%
+.chat_container
+	min-height 370px
+#chat
+	position relative
+	// overflow hidden
+	width: 100%
+	// min-height 367px
+	// margin-bottom: 20px
+.chat_video_wrapper
+	video
+	img
+		cursor: auto
+.chat_img
+	object-fit: cover;
+.sh_header
+	background-color: #4745d7 !important
+a.shc
+.sh_top_buttons
+.sh_hico_close
+.sh_hico_popup
+.sh_button_gray_complete
+	display: none !important
+.sh_chat
+	height 367px !important
+.main_cons
+	text-align: center
+	.main_title
+		margin 0 auto 20px
+.main_avatar
+	border-radius: 50%
+	box-shadow: 0 0 5px 0 rgba(#000, .5)
+	margin-bottom: 20px
+	display: inline

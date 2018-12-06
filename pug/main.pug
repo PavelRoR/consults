@@ -1,8 +1,19 @@
 include header
 section#main
-    .container
-        h1.main_title Консультация
-        h2.main_subtitle Решение ваших проблем в сфере бизнеса, здоровья, личных отношений...
-        h3.main_subtitle.main_subtitle_reach Получите консультацию через 5 минут
-        button.button.button_main(data-toggle="modal" data-target="#pcModalForm") Получить консультацию
-        img(src="img/magic_five.png", alt="Великолепная пятёрка")#magic_five
+	.container
+		h1.main_title Консультация
+		h2.main_subtitle Решение ваших проблем в сфере бизнеса, здоровья, личных отношений...
+		h3.main_subtitle.main_subtitle_reach Получите консультацию через 5 минут
+		button.button.button_main(data-toggle="modal" data-target="#pcModalForm") Получить консультацию
+		//- img(src="img/magic_five.png", alt="Великолепная пятёрка")#magic_five
+		.row
+			.col-md-6.col-sm-6
+				h4.ask Задайте вопрос дежурному специалисту
+				.video_wrapper.chat_video_wrapper
+					img(src="video/chat.jpg", alt="Секретарша").chat_img
+					//- video#video(autoplay="autoplay" loop="loop" poster="video/chat.jpg" muted="muted" ).hide
+					//- 	source(src="video/chat.ogv" type='video/ogg; codecs="theora, vorbis"')
+					//- 	source(src="video/chat.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"')
+					//- 	source(src="video/chat.webm" type='video/webm; codecs="vp8, vorbis"')
+			.col-md-6.col-sm-6.chat_container
+				#chat

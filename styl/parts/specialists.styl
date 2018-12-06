@@ -2,10 +2,12 @@
 	padding 0 0 20px
 	background-color: #fefeff
 .our_specialist
+	padding 10px
 	max-width: 90%;
 	margin: 0 auto 60px;
 	text-align: center;
-	min-height: 340px
+	min-height: 350px
+	display block
 	img
 		border-radius: 50%;
 		width: 161px;
@@ -26,3 +28,27 @@
 		line-height: 1.438;
 #our_specialists_more
 	display: none
+.our_specialist_linked
+	transition: all .1s ease
+	&:focus
+			text-decoration: none
+	&:hover
+		border-radius: 5px
+		box-shadow: 0 0 5px 0 rgba(#000, .15)
+		text-decoration: none
+.sp_links
+	overflow hidden
+	margin-top: 5px
+.sp_link
+.to_main
+	color #5553fe
+	text-decoration: none
+	font-size: 16px
+	&:focus
+	&:hover
+		text-decoration: none
+		color #5553fe
+.sp_link_more
+	float left
+.sp_link_chat
+	float: right
