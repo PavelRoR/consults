@@ -127,6 +127,29 @@ $(document).ready(function () {
             $(this).parent().html('<iframe src="https://youtube.com/embed/' + dy + '?rel=0&autoplay=1" allowfullscreen></iframe>');
         });
     });
-
+    /*Сертификаты*/
+    $(function () {
+        $('#all_certs_button').click(function () {
+            if ($(this).text() == 'Все сертификаты') {
+                $('#all_certs').slideDown(700);
+                $(this).text('Свернуть');
+            } else {
+                $('#all_certs').slideUp(700);
+                $(this).text('Все сертификаты');
+            }
+        });
+    });
+    /*Запросы*/
+    $(function () {
+        $('.requests_list_more ').click(function () {
+            if ($(this).text() == 'подробнее') {
+                $(this).next().slideDown(700);
+                $(this).text('свернуть');
+            } else {
+                $(this).next().slideUp(700);
+                $(this).text('подробнее');
+            }
+        });
+    });
     /*Конец документа*/
 });
