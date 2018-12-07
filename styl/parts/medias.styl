@@ -21,6 +21,7 @@
         font-size: 24px
         max-width: 715px;
     #footer #politics, #footer p
+    .to_main
         font-size: 18px
     .request_example
         height 265px
@@ -55,6 +56,13 @@
         min-height 440px
     .button_action
         max-width 500px
+    .skills_list li
+    .requests_list li
+        font-size: 20px
+        &:before
+            top 13px
+    .requests_list
+        max-width 560px
 @media screen and (max-width 1199px)
     .request_example
         padding 40px
@@ -145,6 +153,15 @@
             position static
             transform: rotate(90deg)
             margin: 10px auto 0
+    #main.main_cons
+    #cons_skills
+    #cons_requests
+    #cons_biography
+        padding 40px 0
+        .general_title
+            margin-bottom: 30px
+    .main_subtitle_reach
+        margin-top: 20px
 @media screen and (max-width 675px)
     .col-xs-6
     .col-xs-4
@@ -239,6 +256,26 @@
         padding 15px 20px
     #chat
         margin-bottom: 40px
+    #cons_biography, #cons_requests, #cons_skills, #main.main_cons
+        padding 30px 0
+    .main_subtitle_reach
+        margin-top: 10px
+    .skills_list
+        margin-bottom: 40px
+    .skills_list li
+    .biography_text
+        margin-bottom: 10px
+    .requests_list
+        max-width 100%
+        margin-bottom: 40px
+        li
+            margin-bottom: 10px
+            i
+                margin-right: 7px
+    .biography_img
+        display block
+        float none
+        margin 0 auto 25px
 @media screen and (max-width 360px)
     .main_title
         font-size: 28px
@@ -297,3 +334,10 @@
         padding 10px 15px
     .sh_header
         min-width 100% !important
+    .main_avatar
+        margin-bottom: 0
+    #cons_skills
+        padding-bottom: 0
+    .skills_list
+    .requests_list
+        margin-bottom: 20px

@@ -54,7 +54,7 @@ html(lang="ru")
 			.container
 				h1.main_title Консультант:
 				img.main_avatar(src="img/sazonova.a.jpg", alt="Алена Сазонова")
-				h2.main_subtitle Алена Сазонова
+				h2.main_subtitle.spec_main_suptitle Алена Сазонова
 				h3.main_subtitle.main_subtitle_reach Получите консультацию Алены
 				button.button.buttom_main_cons(data-toggle="modal" data-target="#pcModalForm") Получить консультацию
 		section#cons_skills
@@ -139,7 +139,9 @@ html(lang="ru")
 				p.biography_text Искала, где же именно моё место и нашла себя в оздоровительной медицине, помогая восстанавливаться людям после инсульта. Параллельно с этим в течении 20 лет обучение целительству, биоэнергетике, альтернативной медицине, эзотерическим практикам. 
 				p.biography_text Опыт работы колоссальный, осознала, что по  частям людей не вылечишь, нужно восстановить целостность человека на уровне дух-душа-тело. Я жена и мать двоих  детей, взрослая дочь и сын-подросток. 
 				p.biography_text Сейчас осваиваю новую для меня профессию преподавателя, веду авторскую школу, уже более 65 учеников открыли свои сверхспособности в школе живой эзотерики.
-				a(href="/").to_main На главную
+				a(href="/").to_main 
+					i.fa.fa-angle-double-left(aria-hidden="true") &nbsp;
+					| На главную
 		section#footer
 			.container
 				.soc_buttons
