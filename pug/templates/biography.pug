@@ -1,0 +1,9 @@
+section#cons_biography
+	.container
+		h3.general_title Биография #{name_and_surname_2}
+		img(data-src= img, alt= name_and_surname_1).biography_img.lazy
+		each bp in bpps.length ? bpps : ['']
+			p.biography_text #{bp}
+		a(href="/").to_main 
+			i.fa.fa-angle-double-left(aria-hidden="true") &nbsp;
+			| На главную

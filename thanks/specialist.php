@@ -15,7 +15,7 @@ $message = $_POST['msg'];
 $mail->Host = 'smtp.yandex.ru';                                               // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'pc-managers@mastervision.su'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'cw9duECuuC2O0aRU9g'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Password = '1MYnhFV0RMJZ65R2nk60Gx'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 

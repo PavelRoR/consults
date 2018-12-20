@@ -1,0 +1,9 @@
+section#cons_requests
+	.container
+		h3.general_title.cons_requests_general_title Запросы, с которыми работает #{name_2}
+		ul.requests_list
+			each req in reqs.length ? reqs : ['Нет запросов']
+				li 
+					i.fa.fa-check-square-o(aria-hidden="true") 
+					| #{req}
+		button.button.buttom_reqs(data-toggle="modal" data-target="#pcModalForm") Получить консультацию

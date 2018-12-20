@@ -1,0 +1,24 @@
+.modal.fade(tabindex="-1" role="dialog")#pcModalForm
+	.modal-dialog(role="document")
+		.modal-content
+			.modal-wrapper
+				.modal-body
+					button.close(type="button" data-dismiss="modal" aria-label="Close")
+						span(aria-hidden="true") ×
+					form.feedback_form.consult_form(action="../../thanks/specialist.php" method="post")
+						h3 Заявка на личную консультацию
+						input(name="first-name" placeholder="Ваше имя" type="text")
+						<!--<input type="text" name="last-name" placeholder="Ваша фамилия" />--> 
+						input(name="phone" placeholder="Ваш телефон" type="tel")
+						<!--<input type="email" name="email" placeholder="Ваш email" />-->
+						input(name="spec" type="hidden"  value=name_and_surname_2)
+						<!--<input type="email" name="email" placeholder="Ваш email" />-->
+						textarea(name="msg" placeholder="Коротко о Вашем запросе")
+						p.alert_message
+						//- <p class="success_message"></p>
+						.checking
+							input.check#check(checked="checked" type="checkbox")
+							label.check_label(for="check") Я согласен с
+								a(href="javascript:void(0);" data-toggle="modal" data-target="#pcModalPolitics" ) условиями обработки 
+								| персональных данных
+						button.button(type="submit") Отправить

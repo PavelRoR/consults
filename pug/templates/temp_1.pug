@@ -1,0 +1,221 @@
+-var name_1 = '';
+-var name_2 = '';
+-var name_and_surname_1 = '';
+-var name_and_surname_2 = '';
+-var img = '';
+-var skills = [];
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		block header
+			meta(charset="UTF-8")
+			meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, minimum-scale=1, maximum-scale=1")
+			meta(http-equiv="X-UA-Compatible" content="ie=edge")
+			meta(name="author" content="Master Vision")
+			meta(name="description" content="Консультант MasterVision: #{name_and_surname_1}")
+			meta(property="og:image" content="http://mastervisioncons.ru/img/banner.jpg")
+			title Консультант MasterVision: #{name_and_surname_1}
+			link(rel="icon" type="image/x-icon" href="../favicon.ico")
+			link(rel="shortcut icon" type="image/x-icon" href="../favicon.png")
+			link(rel="stylesheet" href="../css/specs.css")
+			<!-- Facebook Pixel Code -->
+			script
+				| !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init', '183143279045048');fbq('track', 'PageView');
+			noscript
+				img(height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=869611096574211&ev=PageView&noscript=1")
+			<!-- End Facebook Pixel Code -->
+			script 
+				| !function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?158",t.onload=function(){VK.Retargeting.Init("VK-RTRG-11201-hHU9b"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
+		body#specialist
+				section#main.main_cons
+					.container
+						h1.main_title Консультант:
+						img.main_avatar(src=img, alt=name_and_surname_1)
+						h2.main_subtitle.spec_main_suptitle #{name_and_surname_1}
+						h3.main_subtitle.main_subtitle_reach Получите консультацию #{name_2}
+						button.button.buttom_main_cons(data-toggle="modal" data-target="#pcModalForm") Получить консультацию
+				section#cons_skills
+					.container
+						h3.general_title Навыки и регалии #{name_2}
+						ul.skills_list
+							each skill in skills.length ? skills : ['Нет навыков и регалий']
+								li= skill
+						.video_wrapper.video_wrapper_spec_preveiw(data-youtube="-WOWSnefOWY")
+							img(data-src="img/prev.jpg", alt="Визитка Алеси").lazy
+						.row.certs_container
+							.col-md-3.col-sm-3.col-xs-6
+								a(href="img/cert_1.jpg" data-fancybox="certs")
+									img.lazy.cert_img(data-src="img/cert_1_min.jpg", alt="Сертификат")
+							.col-md-3.col-sm-3.col-xs-6
+								a(href="img/cert_2.jpg" data-fancybox="certs")
+									img.lazy.cert_img(data-src="img/cert_2_min.jpg", alt="Сертификат")
+							.col-md-3.col-sm-3.col-xs-6
+								a(href="img/cert_3.jpg" data-fancybox="certs")
+									img.lazy.cert_img(data-src="img/cert_3_min.jpg", alt="Сертификат")
+							.col-md-3.col-sm-3.col-xs-6
+								a(href="img/cert_4.jpg" data-fancybox="certs")
+									img.lazy.cert_img(data-src="img/cert_4_min.jpg", alt="Сертификат")
+						button.button.all_certs_button#all_certs_button Все сертификаты
+						.row.certs_container#all_certs
+							.col-md-3.col-sm-3.col-xs-6
+								a(href="img/cert_5.jpg" data-fancybox="certs")
+									img.lazy.cert_img(data-src="img/cert_5_min.jpg", alt="Сертификат")
+							.col-md-3.col-sm-3.col-xs-6
+								a(href="img/cert_6.jpg" data-fancybox="certs")
+									img.lazy.cert_img(data-src="img/cert_6_min.jpg", alt="Сертификат")
+							.col-md-3.col-sm-3.col-xs-6
+								a(href="img/cert_7.jpg" data-fancybox="certs")
+									img.lazy.cert_img(data-src="img/cert_7_min.jpg", alt="Сертификат")
+							.col-md-3.col-sm-3.col-xs-6
+								a(href="img/cert_8.jpg" data-fancybox="certs")
+									img.lazy.cert_img(data-src="img/cert_8_min.jpg", alt="Сертификат")
+							.col-md-3.col-sm-3.col-xs-6
+								a(href="img/cert_9.jpg" data-fancybox="certs")
+									img.lazy.cert_img(data-src="img/cert_9_min.jpg", alt="Сертификат")
+							.col-md-3.col-sm-3.col-xs-6
+								a(href="img/cert_10.jpg" data-fancybox="certs")
+									img.lazy.cert_img(data-src="img/cert_10_min.jpg", alt="Сертификат")
+							.col-md-3.col-sm-3.col-xs-6
+								a(href="img/cert_11.jpg" data-fancybox="certs")
+									img.lazy.cert_img(data-src="img/cert_11_min.jpg", alt="Сертификат")
+							.col-md-3.col-sm-3.col-xs-6
+								a(href="img/cert_12.jpg" data-fancybox="certs")
+									img.lazy.cert_img(data-src="img/cert_12_min.jpg", alt="Сертификат")
+				section#cons_requests
+					.container
+						h3.general_title.cons_requests_general_title Запросы, с которыми работает #{name_2}
+						ul.requests_list
+							li 
+								i.fa.fa-check-square-o(aria-hidden="true") 
+								| Деньги 
+								span.requests_list_more подробнее
+								ul.requests_inner_list
+									li не могу перепрыгнуть выше определённой суммы дохода;
+									li кредиты, долги;
+									li мне должны, не возвращают;
+									li  строгий начальник, кричит, не даёт премий;
+									li не могу подняться вверх по карьерной лестнице;
+									li как уйти из найма и перейти в собственное дело (бизнес, фриланс);
+									li не могу зарабатывать на своём любимом деле достойные деньги;
+									li не могу продать дом/квартиру
+							li 
+								i.fa.fa-check-square-o(aria-hidden="true") 
+								| Отношения 
+								span.requests_list_more подробнее
+								ul.requests_inner_list
+									li нет любимого и любящего мужчины;
+									li нет достойных мужчин рядом;
+									li не могу выйти замуж;
+									li не умею знакомиться;
+									li нет взаимопонимания с нынешним партнёром;
+									li ссоры/конфликты в семье;
+									li развод;
+									li хочу вернуть бывшего;
+									li не могу забыть бывшего;
+									li умер любимый человек, не могу вернуть себя к полноценной жизни;
+									li любовная зависимостью;
+									li любовный треугольник (у мужа любовница; я любовница, хочу увести его из семьи)	
+							li 
+								i.fa.fa-check-square-o(aria-hidden="true") 
+								| Сексуальность и женственность 
+								span.requests_list_more подробнее
+								ul.requests_inner_list
+									li не хочу своего мужчину;
+									li не получаю удовольствия в сексе;
+									li не испытываю возбуждения к мужчинам в принципе;
+									li не могу быть женственной;
+									li пропала лёгкость из жизни;
+									li хочу вернуть радость в свою жизнь
+							li 
+								i.fa.fa-check-square-o(aria-hidden="true") 
+								| Подарки 
+								span.requests_list_more подробнее
+								ul.requests_inner_list
+									li не умею получать подарки; 
+									li не дарят мне того, чего хочу;
+									li я заслуживаю большего
+							li 
+								i.fa.fa-check-square-o(aria-hidden="true") 
+								| Поиск себя (предназначение, миссия, призвание) 
+								span.requests_list_more подробнее
+								ul.requests_inner_list
+									li не могу найти себя, своё место;
+									li не понимаю, чем заниматься в жизни, чтобы мне это нравилось и приносило доход
+							li 
+								i.fa.fa-check-square-o(aria-hidden="true") 
+								| Родители и дети 
+								span.requests_list_more подробнее
+								ul.requests_inner_list
+									li дочь/сын не слушается;
+									li не могу общаться со своими родителями (мамой и/или папой);
+									li родители умерли, не могу жить без них;
+									li мама не даёт устроить мне личную жизнь;
+									li проблемы у сына/дочери, я переживаю, хочу помочь, а он/она не слышит меня;
+									li виню себя за аборты;
+									li сын/дочь не работает, хотя уже взрослый/взрослая
+							li 
+								i.fa.fa-check-square-o(aria-hidden="true") 
+								| Психосоматика 
+								span.requests_list_more подробнее
+								ul.requests_inner_list
+									li заболевания, имеющие психосоматическую природу;
+									li бесплодие;
+									li женские заболевания (миомы, эндометриоз, поликистоз, кисты и др.)
+							li 
+								i.fa.fa-check-square-o(aria-hidden="true") 
+								| Вес 
+								span.requests_list_more подробнее
+								ul.requests_inner_list
+									li не могу сбросить вес;
+									li заедаю стрессы;
+									li переедаю;
+									li не могу перестать есть сладкое;
+									li не могу заставить себя заняться спортом;
+									li не могу набрать вес
+							li 
+								i.fa.fa-check-square-o(aria-hidden="true") 
+								| Смерть близкого человека 
+								span.requests_list_more подробнее
+								ul.requests_inner_list
+									li боль после утраты близкого человека (мамы, папы мужа, ребёнка, выкидыш и т.п.)
+							li 
+								i.fa.fa-check-square-o(aria-hidden="true") 
+								| Энергия, время 
+								span.requests_list_more подробнее
+								ul.requests_inner_list
+									li не хватает времени ни на что;
+									li нет энергии;
+									li депрессии постоянные ;
+									li много стрессов;
+									li усталость и хандра;
+									li не знаю, как всё успеть
+							li 
+								i.fa.fa-check-square-o(aria-hidden="true") 
+								| Зависимости, пограничные состояния 
+								span.requests_list_more подробнее
+								ul.requests_inner_list
+									li алкоголизм (например, у мужа, у сына/дочери);
+									li наркомания;
+									li шизофрения;
+									li болезнь Альцгеймера и подобные;
+						button.button.buttom_reqs(data-toggle="modal" data-target="#pcModalForm") Получить консультацию
+				section#cons_biography
+					.container
+						h3.general_title Биография #{name_and_surname_2}
+						img(data-src= img, alt= name_and_surname_1).biography_img.lazy
+						p.biography_text Родилась в Беларуси. С раннего детства была крайне закомплексована, стеснительна. В семье царил патриархат - женщины рода (мама, бабушки и др.) должны были быть крайне послушными, а мужчины были деспотичны, тираничны. Отец ещё и впадал в психотические состояние порой, сам того не осознавая. С детства я видела, что мужчины всё решают, а женщина должна молчать, заниматься бытом, детьми. При этом всём я крайне любила отца, считала себя папиной дочкой
+						p.biography_text И тут в одночасье мой мир рухнул, когда в мои 10 лет отец неожиданно собрал вещи и ушёл из дома - к другой. Мама даже ничего не подозревала. Вот тогда я впервые и узнала, что такое измены, которые приводят к краху семье. В этот момент моя картина мира перестала быть прежней
+						p.biography_text Уже с того времени я стала задавать себе вопросы: как сделать так, чтобы мужчины не уходили, не изменяли, уважали, любили женщин, помогали, поддерживали?
+						p.biography_text И с 14 лет я стала изучать психологию - психологию мужчин и женщин, отношений, поиска себя и своего предназначения, психологию мышления богатых людей, психосоматику, искала ответы на вопрос: как реализовать себя как женщина и при этом быть востребованной как женщина
+						p.biography_text Я хотела поступать учиться на психолога, но родители сказали, что в этой сфере много не заработаешь. Так я стала инженером-нефтяником. Правда, к концу обучения в техническом вузе я окончательно решила, что работать по этой специальности не буду и что пришло моё время выбирать, чего я сама хочу от жизни и кем мне в ней быть
+						p.biography_text Душа рвалась помогать людям и я осознанно выбрала путь психолога
+						p.biography_text Много лет обучения, практики, помощи людям за спиной сделали своё дело - за 1 сеанс я могу перекопать историю рода человека, если он готов. Ведь в  истории рода записана наша судьба. И если мы её расшифруовываем и снимаем оковы прошлого, мы открываем свою чистую светлую дорогу, в которой наша жизнь наполнена яркими и интересными событиями, в которой у нас отношения мечты, любимая деятельность и партнёр по судьбе
+						p.biography_text Я прошла путь, полный боли, страхов, слёз и кошмаров. Но теперь знаю, как жить другую жизнь - жизнь, полную красок, любви и огня! Сейчас я автор курсов для женщин и мужчин: «Женское достоинство», «Деньги – легко!», «Призвание. Найти и реализовать», «Любовь НЕТ Зависимость», «ПродвижениеБезНапряжения», «Похудение без насилия над собой»
+						p.biography_text Своим клиентам я помогаю в корне переписывать жизненные сценарии. Мои клиенты налаживают отношения в паре, встречают любимого человека, увеличивают свой доход в 3-5 раз, находят дело всей своей жизни и зарабатывают на нём достойные деньги, избавляются от психосоматических заболеваний, приводят в норму свой вес
+						p.biography_text У меня своя площадка "Расстановки Онлайн", где уже более 100 консультантов являются заместителями и куда я приглашаю клиентов на расстановки (не нужно ехать в другой город и выходить из дома, чтобы сделать качественную расстановку с живыми заместителями)
+						a(href="/").to_main 
+							i.fa.fa-angle-double-left(aria-hidden="true") &nbsp;
+							| На главную
+				include footer
+				include mail_form
+				include polit
