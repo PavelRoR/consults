@@ -4,6 +4,7 @@ section#cons_biography
 		img(data-src= img, alt= name_and_surname_1).biography_img.lazy
 		each bp in bpps.length ? bpps : ['']
 			p.biography_text #{bp}
+		.clearfix
 		a(href="/").to_main 
 			i.fa.fa-angle-double-left(aria-hidden="true") &nbsp;
 			| На главную
