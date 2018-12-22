@@ -1,0 +1,78 @@
+-var name_1 = 'Динара';
+-var name_2 = 'Динары';
+-var name_and_surname_1 = 'Динара Янбердина';
+-var name_and_surname_2 = 'Динары Янбердиной';
+-var img = 'img/yanbedrina.d.png';
+-var skills = ['Сертификат, НЛП - практика.  март 2001г. R. Conner,', 'Сертификат,  Семинар Элизабет Э.Эриксон – Эллиотт, M.S., L.C., L.M.F.T. по эриксонианскому гипнозу. Г. Новосибирск,', 'Удостоверение, Современные методы психотерапии, 200часов,Новосибирский гос. университет, Практическая психология,', 'Удостоверение, НЛП в психотерапии. НУДО «Центр семейного консультирования  Коннера»,', 'Удостоверение, Влияние мышления на эмоции и здоровье. ОЦ «Факультет семейной психологии», Р. Коннер, ТГПУ,' , 'Удостоверение, Семейная психотерапия. ОЦ «Факультет семейной психологии», Р. Коннер, ТГПУ,', 'Удостоверение, Изменения ограничивающих представлений. ОЦ «Факультет семейной психологии», Р. Коннер, ТГПУ,' , 'Удостоверение, Психотерапевтические навыки и приёмы высшего уровня. НУДО, г. Новосибирск., Р. Коннер, Практическая психология,', 'Сертификат, Технология Phenotype-диагностика личности и методы управления человеческим фактором. Аналитический центр «Resultat», г. Таллин., Консультант по кадровой безопасности,' , 'Удостоверение, Психологическое сопровождение личности в кризисных ситуациях. ГАОУ ДПО ИРО РБ,', 'Сертификат, Анатомия отношений. Преподаватель курса Жанна Абрамова.  Академия Master Vision,', 'Сертификат, МАК – интенсив. Электронная научно-образовательная библиотека,' , 'Сертификат, МАК. Восстановление справедливости. Преподаватель курса Жанна Абрамова. Академия Master Vision'];
+-var reqs = ['не можешь найти общий язык со своим ребёнком'];
+-var bpps = [];
+<!DOCTYPE html>
+html(lang="ru")
+	include ../templates/header
+	body#specialist
+		include ../templates/main
+		section#cons_skills
+			.container
+				h3.general_title Навыки и регалии #{name_2}
+				ul.skills_list
+					each skill in skills.length ? skills : ['Нет навыков и регалий']
+						li= skill
+				div.row.certs_container
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_1.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_1_min.jpg", alt="Сертификат")
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_2.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_2_min.jpg", alt="Сертификат")
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_3.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_3_min.jpg", alt="Сертификат")
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_4.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_4_min.jpg", alt="Сертификат")
+				button.button.all_certs_button#all_certs_button Все сертификаты
+				.row.certs_container#all_certs
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_5.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_5_min.jpg", alt="Сертификат")
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_6.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_6_min.jpg", alt="Сертификат")
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_7.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_7_min.jpg", alt="Сертификат")
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_8.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_8_min.jpg", alt="Сертификат")
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_9.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_9_min.jpg", alt="Сертификат")
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_10.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_10_min.jpg", alt="Сертификат")
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_11.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_11_min.jpg", alt="Сертификат")
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_12.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_12_min.jpg", alt="Сертификат")
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_13.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_13_min.jpg", alt="Сертификат")
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_14.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_14_min.jpg", alt="Сертификат")
+					.col-md-3.col-sm-3.col-xs-6
+						a(href="img/cert_15.jpg" data-fancybox="certs")
+							img.lazy.cert_img(data-src="img/cert_15_min.jpg", alt="Сертификат")
+		include ../templates/reqs_min
+		section#cons_biography
+			.container
+				.clearfix
+				a(href="/").to_main 
+					i.fa.fa-angle-double-left(aria-hidden="true") &nbsp;
+					| На главную
+		//- include ../templates/biography
+		include ../templates/footer
+		include ../templates/mail_form
+		include ../templates/polit
