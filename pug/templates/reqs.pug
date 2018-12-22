@@ -1,0 +1,14 @@
+section#cons_requests
+	.container
+		h3.general_title.cons_requests_general_title Запросы, с которыми работает #{name_1}
+		ul.requests_list
+			each req in reqs.length ? reqs : ['Нет запросов']
+				li 
+					i.fa.fa-check-square-o(aria-hidden="true") 
+					| #{req}
+		div.row.certs_container
+			each req_img in reqs_img
+				.col-md-3.col-sm-3.col-xs-6
+					a(href= req_img.href data-fancybox="revs")
+						img.lazy.rev_img(data-src= req_img.src, alt="Отзыв")
+		button.button.buttom_reqs(data-toggle="modal" data-target="#pcModalForm") Получить консультацию

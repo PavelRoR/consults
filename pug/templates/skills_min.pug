@@ -1,0 +1,6 @@
+section#cons_skills
+	.container
+		h3.general_title Навыки и регалии #{name_2}
+		ul.skills_list
+			each skill in skills.length ? skills : ['Нет навыков и регалий']
+				li= skill

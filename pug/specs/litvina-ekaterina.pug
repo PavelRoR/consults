@@ -1,0 +1,44 @@
+-var name_1 = 'Екатерина';
+-var name_2 = 'Екатерины';
+-var name_and_surname_1 = 'Екатерина Литвина';
+-var name_and_surname_2 = 'Екатерины Литвиной';
+-var img = 'img/avatar.jpg';
+-var skills = ['Врач,', 'Кандидат медицинских наук,', 'Тета-хилинг,', 'МАК-терапевт,','Психосоматолог,', 'Коучинг'];
+-var reqs = ['Здоровье физическое и психическое,', 'Психосоматика,', 'Принятие решения,', 'Отношения,', 'Коррекция состояния,', 'Выход из кризиса,', 'Поиск ресурсов'];
+-var bpps = ['Я практический врач хирург. Не по наслышке знаю что такое боль. Физическая и душевная. Сама столкнулась с кризисами в жизни и неразрешимой ситуацией с собственным здоровьем. Имея настойчивый характер, и пытливый ум, я не смогла смириться с приговором традиционной медицины, представителем которой являюсь сама. Это заставило меня изучать альтернативные способы лечения и диагностики, пройти дополнительно обучение в системах традиционной и нетрадиционной медицины, оздоровительных систем цигун, йоги, психологии, тета-хилинга, коучинга и проч. В настоящее время мое сознание и опыт врача значительно расширился. Я вижу своих пациентов и клиентов с другой стороны, намного глубже вижу причинно-следственные связи их состояний и выход из сложившейся ситуации. Мое здоровье так же улучшилось в разы, снята необходимость в операции. Симбиоз традиционных знаний медицины, психологии, духовных и эзотерических практик сейчас очень актуален и, где-то, наверное, необходим. Мне самой  очень интересно и радостно наблюдать   результаты  исцелений и трансформаций состояний человека.'];
+-var reqs_img = [{href: "img/rev_1.jpg", src: "img/rev_1_min.jpg"},{href: "img/rev_2.jpg", src: "img/rev_2_min.jpg"}, {href: "img/rev_3.jpg", src: "img/rev_3_min.jpg"},{href: "img/rev_4.jpg", src: "img/rev_4_min.jpg"},{href: "img/rev_5.jpg", src: "img/rev_5_min.jpg"},{href: "img/rev_6.jpg", src: "img/rev_6_min.jpg"}, {href: "img/rev_7.jpg", src: "img/rev_7_min.jpg"},{href: "img/rev_8.jpg", src: "img/rev_8_min.jpg"}];
+<!DOCTYPE html>
+html(lang="ru")
+	include ../templates/header
+	body#specialist
+		include ../templates/main
+		include ../templates/skills
+			.col-md-3.col-sm-3.col-xs-6
+				a(href="img/cert_1.jpg" data-fancybox="certs")
+					img.lazy.cert_img(data-src="img/cert_1_min.jpg", alt="Сертификат")
+			.col-md-3.col-sm-3.col-xs-6
+				a(href="img/cert_2.jpg" data-fancybox="certs")
+					img.lazy.cert_img(data-src="img/cert_2_min.jpg", alt="Сертификат")
+			.col-md-3.col-sm-3.col-xs-6
+				a(href="img/cert_3.jpg" data-fancybox="certs")
+					img.lazy.cert_img(data-src="img/cert_3_min.jpg", alt="Сертификат")
+			.col-md-3.col-sm-3.col-xs-6
+				a(href="img/cert_4.jpg" data-fancybox="certs")
+					img.lazy.cert_img(data-src="img/cert_4_min.jpg", alt="Сертификат")
+			.col-md-3.col-sm-3.col-xs-6
+				a(href="img/cert_5.jpg" data-fancybox="certs")
+					img.lazy.cert_img(data-src="img/cert_5_min.jpg", alt="Сертификат")
+			.col-md-3.col-sm-3.col-xs-6
+				a(href="img/cert_6.jpg" data-fancybox="certs")
+					img.lazy.cert_img(data-src="img/cert_6_min.jpg", alt="Сертификат")
+			.col-md-3.col-sm-3.col-xs-6
+				a(href="img/cert_7.jpg" data-fancybox="certs")
+					img.lazy.cert_img(data-src="img/cert_7_min.jpg", alt="Сертификат")
+			.col-md-3.col-sm-3.col-xs-6
+				a(href="img/cert_8.jpg" data-fancybox="certs")
+					img.lazy.cert_img(data-src="img/cert_8_min.jpg", alt="Сертификат")
+		include ../templates/reqs
+		include ../templates/biography
+		include ../templates/footer
+		include ../templates/mail_form
+		include ../templates/polit
