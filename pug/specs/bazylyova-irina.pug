@@ -1,0 +1,21 @@
+-var name_1 = 'Ирина';
+-var name_2 = 'Ирины';
+-var name_and_surname_1 = 'Ирина Базылова';
+-var name_and_surname_2 = 'Ирины Базыловой';
+-var img = 'img/avatar.jpg';
+-var skills = ['Коуч,', 'МАК-терапевт,', 'Расстановщик,', 'Руны,', 'Нумерология,', 'Решение зависимостей (до года)'];
+-var reqs = ['Здоровье,', 'Финансы,', 'Отношения в паре (создать, улучшить, завершить) + Дети + Родители,', 'Карьера,', 'Исполнение желаний,', 'Предназначение,', 'Карма,', 'Страхи,', 'Родовые задачи,', 'Вернуть удачу'];
+-var bpps = ['Мне 48 лет, родилась в г. Брянск.', 'В 1987 году, закончив школу, поступила в Ростовский инженерно-строительный институт, позже, в 1999 году получила специальность бухгалтера, а в 2008 году диплом Финансового Директора.','Начиная с 2000 года работала в коммерческих предприятиях на руководящих постах. Однако желание познать законы жизни взяло верх и в 2013 обучалась в Международном Эриксоновском Университете Коучей. Далее, с 2014 года по настоящий момент продолжала образование в нескольких частных Российских и зарубежных заведениях по психологии, нумерологии, Мак-терапии, Отношениям и Системным расстановкам.','У меня двое танталовых детей. В настоящий момент живу в Москве.'];
+-var reqs_img = [{href: "img/rev_1.jpg", src: "img/rev_1_min.jpg"},{href: "img/rev_2.jpg", src: "img/rev_2_min.jpg"}, {href: "img/rev_3.jpg", src: "img/rev_3_min.jpg"},{href: "img/rev_4.jpg", src: "img/rev_4_min.jpg"},{href: "img/rev_5.jpg", src: "img/rev_5_min.jpg"},{href: "img/rev_6.jpg", src: "img/rev_6_min.jpg"}, {href: "img/rev_7.jpg", src: "img/rev_7_min.jpg"},{href: "img/rev_8.jpg", src: "img/rev_8_min.jpg"}];
+-var certs = [{href: 'img/cert_1.jpg', src: 'img/cert_1_min.jpg'},{href: 'img/cert_2.jpg', src: 'img/cert_2_min.jpg'},{href: 'img/cert_3.jpg', src: 'img/cert_3_min.jpg'},{href: 'img/cert_4.jpg', src: 'img/cert_4_min.jpg'},{href: 'img/cert_5.jpg', src: 'img/cert_5_min.jpg'}]
+<!DOCTYPE html>
+html(lang="ru")
+	include ../templates/header
+	body#specialist
+		include ../templates/main
+		include ../templates/skills
+		include ../templates/reqs
+		include ../templates/biography
+		include ../templates/footer
+		include ../templates/mail_form
+		include ../templates/polit

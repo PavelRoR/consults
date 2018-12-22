@@ -5,4 +5,7 @@ section#cons_skills
 			each skill in skills.length ? skills : ['Нет навыков и регалий']
 				li= skill
 		div.row.certs_container
-			| 
+			each cert in certs
+				.col-md-3.col-sm-3.col-xs-6
+					a(href= cert.href data-fancybox="certs")
+						img.lazy.rev_img(data-src= cert.src, alt="Отзыв")
